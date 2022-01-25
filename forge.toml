@@ -1,0 +1,15 @@
+[default]
+src = 'src'
+out = '.forge/out'
+libs = ['src/contracts/Libraries']
+remappings = ['hardhat/=node_modules/hardhat/', '@openzeppelin/=node_modules/@openzeppelin/', 'hardhat-deploy/=node_modules/hardhat-deploy/']
+verbosity = 3
+ffi = true
+force = true
+eth_rpc_url = 'https://moonriver.api.onfinality.io/public'
+solc-version = "8.0.9"
+optimizer = true
+optimizer_runs = 999999
+fuzz_runs = 100
+
+# See more config options https://github.com/gakonst/foundry/tree/master/config
