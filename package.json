@@ -1,12 +1,12 @@
 {
-  "name": "template-ethereum-contracts",
+  "name": "rome-contracts-template",
   "version": "0.1.0",
-  "description": "Template to develop ethereum smart contracts",
+  "description": "Template to develop rome smart contracts",
   "private": true,
   "engines": {
     "node": ">= 14.0.0"
   },
-  "repository": "github:wighawag/template-ethereum-contracts",
+  "repository": "github:romedao/rome-contracts-template",
   "author": "wighawag",
   "license": "MIT",
   "keywords": [
