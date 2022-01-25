@@ -1,5 +1,7 @@
 # Boilerplate for RomeDAO solidity smart contract development
 
+fork of [template-ethereum-contracts](https://github.com/wighawag/template-ethereum-contracts) made to run with forge instead of dapptools.
+
 ## INSTALL
 
 ```bash
