@@ -8,7 +8,7 @@ fork of [template-ethereum-contracts](https://github.com/wighawag/template-ether
 yarn
 ```
 
-## RUNNING LOCALLY
+## RUN
 
 ```bash
 yarn dev
@@ -20,9 +20,9 @@ yarn dev
 yarn test
 ```
 
-The tests are run forge which requires an additional step to set up your machine:
+The tests are run with forge which requires an additional step to set up your machine:
 
-Install forge (Following instruction [here](https://github.com/gakonst/foundry)):
+Install forge by following the instructions [here](https://github.com/gakonst/foundry)
 
 ## SCRIPTS
 
