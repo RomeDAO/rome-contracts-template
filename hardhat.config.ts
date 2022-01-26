@@ -4,7 +4,7 @@ import 'hardhat-deploy';
 import '@nomiclabs/hardhat-ethers';
 import '@typechain/hardhat';
 import 'solidity-coverage';
-import {node_url, accounts, addForkConfiguration} from './utils/network';
+import {node_url, accounts} from './utils/network';
 
 const config: HardhatUserConfig = {
   solidity: {
@@ -24,7 +24,7 @@ const config: HardhatUserConfig = {
     deployer: 0,
     simpleERC20Beneficiary: 1,
   },
-  networks: addForkConfiguration({
+  networks: {
     hardhat: {
       initialBaseFeePerGas: 0, // to fix : https://github.com/sc-forks/solidity-coverage/issues/652, see https://github.com/sc-forks/solidity-coverage/issues/652#issuecomment-896330136
     },
@@ -40,7 +40,7 @@ const config: HardhatUserConfig = {
       url: node_url('moonriver'),
       accounts: accounts('moonriver'),
     },
-  }),
+  },
   paths: {
     sources: 'src',
   },
@@ -48,16 +48,6 @@ const config: HardhatUserConfig = {
     outDir: 'typechain',
     target: 'ethers-v5',
   },
-  external: process.env.HARDHAT_FORK
-    ? {
-        deployments: {
-          // process.env.HARDHAT_FORK will specify the network that the fork is made from.
-          // these lines allow it to fetch the deployments from the network being forked from both for node and deploy task
-          hardhat: ['deployments/' + process.env.HARDHAT_FORK],
-          localhost: ['deployments/' + process.env.HARDHAT_FORK],
-        },
-      }
-    : undefined,
 };
 
 export default config;

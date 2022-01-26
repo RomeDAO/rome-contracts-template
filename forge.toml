@@ -2,7 +2,7 @@
 src = 'src'
 out = '.forge/out'
 libs = ['node_modules']
-remappings = ['hardhat/=node_modules/hardhat/', '@openzeppelin/=node_modules/@openzeppelin/', 'hardhat-deploy/=node_modules/hardhat-deploy/']
+remappings = ['hardhat/=hardhat/', '@openzeppelin/=@openzeppelin/', 'hardhat-deploy/=hardhat-deploy/']
 verbosity = 3
 ffi = true
 force = true
