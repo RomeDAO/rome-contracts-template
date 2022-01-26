@@ -20,7 +20,7 @@ yarn dev
 yarn test
 ```
 
-The tests are run with forge which requires an additional step to set up your machine:
+The tests are run with forge which requires forge to be installed.
 
 Install forge by following the instructions [here](https://github.com/gakonst/foundry)
 
@@ -58,9 +58,4 @@ These will lint and format check your code. the `:fix` version will modifiy the 
 ### `yarn void:deploy`
 
 This will deploy your contracts on the in-memory hardhat network and exit, leaving no trace. quick way to ensure deployments work as intended without consequences
-<br/><br/>
-
-### `yarn coverage`
-
-These will produce a coverage report in the `coverage/` folder
 <br/><br/>

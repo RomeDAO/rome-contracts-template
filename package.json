@@ -52,7 +52,6 @@
     "lint:fix": "eslint --fix \"**/*.{js,ts}\" && solhint --fix src/**/*.sol",
     "format": "prettier --check \"**/*.{ts,js,sol}\"",
     "format:fix": "prettier --write \"**/*.{ts,js,sol}\"",
-    "void:deploy": "hardhat deploy",
-    "coverage": "cross-env HARDHAT_DEPLOY_FIXTURE=true hardhat coverage"
+    "void:deploy": "hardhat deploy"
   }
 }
