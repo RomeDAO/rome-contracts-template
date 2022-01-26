@@ -30,15 +30,15 @@ const config: HardhatUserConfig = {
     },
     localhost: {
       url: node_url('localhost'),
-      accounts: accounts(),
+      accounts: accounts('localhost'),
     },
     moonbase: {
       url: node_url('moonbase'),
-      accounts: accounts(),
+      accounts: accounts('moonbase'),
     },
     moonriver: {
       url: node_url('moonriver'),
-      accounts: accounts(),
+      accounts: accounts('moonriver'),
     },
   }),
   paths: {
