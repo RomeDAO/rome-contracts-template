@@ -37,6 +37,3 @@ jobs:
 
       - name: Run mock deploy
         run: yarn void:deploy
-
-      - name: Lint
-        run: yarn lint && yarn format
