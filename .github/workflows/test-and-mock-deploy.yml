@@ -37,3 +37,16 @@ jobs:
 
       - name: Run mock deploy
         run: yarn void:deploy
+
+      - name: Run static analysis
+        uses: crytic/slither-action@v0.1.0
+        id: slither
+        continue-on-error: true
+        with:
+          sarif: results.sarif
+          ignore-compile: true
+
+      - name: Upload static analysis file
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: ${{ steps.slither.outputs.sarif }}
