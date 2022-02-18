@@ -4,7 +4,7 @@
   "description": "Template to develop rome smart contracts",
   "private": true,
   "engines": {
-    "node": ">= 14.0.0"
+    "node": ">= 16.0.0"
   },
   "repository": "github:romedao/rome-contracts-template",
   "author": "wighawag",

@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Download Foundry installer
         uses: wei/curl@v1
@@ -45,6 +45,7 @@ jobs:
         with:
           sarif: results.sarif
           ignore-compile: true
+          slither-args: --filter-paths "src/tests/"
 
       - name: Upload static analysis file
         uses: github/codeql-action/upload-sarif@v1
